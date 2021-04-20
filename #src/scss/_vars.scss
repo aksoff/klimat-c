@@ -5,11 +5,17 @@ $fontFamily: "TT Norms"; //Шрифт по умолчанию
 $white: #fff;
 $primary: #3865D7;
 
-//size screens
+//Screens
 $minWidth: 320px;
 $maxWidth: 1920;
 $maxWidthContainer: 1170;
+
 $projektor: $maxWidthContainer + 12;
 $desktop: 991.98;
 $tablet: 767.98;
 $phone: 479.98;
+
+$maxWidthProjektor: $maxWidthContainer + 12 + 'px';
+$maxWidthDesktop: 991.98 + 'px';
+$maxWidthTablet: 767.98 + 'px';
+$maxWidthPhone: 479.98 + 'px';
