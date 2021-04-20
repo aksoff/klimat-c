@@ -4,30 +4,32 @@ header {
 }
 
 .top-header {
-  margin-top: 20px;
+  height: 100%;
   display: flex;
   position: relative;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;   
   align-items: center;
-
-  @media ($phone) {
-    height: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
+ @media ($phoneX) {
+   font-size: 6px;
+ }
+  @media ($tablet) {
+    margin-top: 20px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
-  
 }
 
 .center {
   display: inline;
   text-align: center;
+  margin-top: 15px;
   & ul {
     display: flex;
   }
-  @media ($phone) {
-    margin-top: 15px;
-  }
+  // @media ($phone) {
+  //   
+  // }
 }
 
 .center__menu li {
@@ -52,11 +54,12 @@ header {
 }
 
 .contacts__phone {
+  margin-top: 15px;
   font-family: $fontFamily;
   font-size: 1.8rem;
-  @media ($phone) {
-    margin-top: 15px;
-  }
+  // @media ($phone) {
+  //   margin-top: 15px;
+  // }
 
   
 }
@@ -64,10 +67,11 @@ header {
 .topmenu {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   margin-top: 60px;
-  @media ($phone) {
-    justify-content: center;
-  }
+  // @media ($phone) {
+  //   justify-content: center;
+  // }
   
 }
 .topmenu__category {
