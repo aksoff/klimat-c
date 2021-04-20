@@ -3,6 +3,7 @@ $fontFamily: "TT Norms"; //Шрифт по умолчанию
 
 //colors
 $white: #fff;
+$fontColor: #444;
 $primary: #3865D7;
 
 //Screens
@@ -10,6 +11,7 @@ $minWidth: 320px;
 $maxWidth: 1920;
 $maxWidthContainer: 1170;
 
+//breakpoints
 $projektor: $maxWidthContainer + 12;
 $desktop: 991.98;
 $tablet: 767.98;
