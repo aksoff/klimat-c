@@ -3419,7 +3419,7 @@ header {
           flex: 1 1 auto;
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: 991.98pxpx) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
     background-color: rgba(0, 0, 0, 0.5);
@@ -3450,7 +3450,7 @@ header {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991.98pxpx) {
   ._container {
     max-width: 750px;
   }
@@ -3464,14 +3464,21 @@ header {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.98pxpx) {
   ._container {
     max-width: none;
     padding: 0 10px;
   }
 }
 
-@media (479.98) {
+@media (max-width: 479.98px) {
+  .center {
+    margin-top: 15px;
+    display: none;
+  }
+}
+
+@media (479.98px) {
   .logo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3488,10 +3495,6 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-
-  .center {
-    margin-top: 15px;
   }
 
   .contacts__phone {
