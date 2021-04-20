@@ -1,0 +1,9 @@
+//&display=swap&subset=cyrillic-ext
+@font-face {
+  font-family: 'TT Norms';
+  src: url('TTNorms-Regular.eot');
+  src: local('TT Norms Regular'), local('TTNorms-Regular'),
+      url('../fonts/TTNorms-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
