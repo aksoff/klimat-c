@@ -10,9 +10,6 @@ header {
   flex-direction: column;
   justify-content: flex-start;   
   align-items: center;
- @media ($phoneX) {
-   font-size: 6px;
- }
   @media ($tablet) {
     margin-top: 20px;
     flex-flow: row nowrap;
@@ -99,7 +96,7 @@ header {
 }
 .topmenu__menu {
   margin-left: 50px;
-  @media ($maxWidthPhone) {
+  @media ($phoneX) {
     display: none;
   }
 }
@@ -155,3 +152,11 @@ header {
 	}
 }
 */
+
+.header__menu {
+  margin-top: 35px;
+  display: flex;
+  & .primary-btn {
+    text-transform: uppercase;
+  }
+}
