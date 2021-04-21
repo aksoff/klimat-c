@@ -3,7 +3,10 @@
   font-family: 'TT Norms';
   src: url('TTNorms-Regular.eot');
   src: local('TT Norms Regular'), local('TTNorms-Regular'),
+      url('../fonts/TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/TTNorms-Regular.woff2') format('woff2'),
+      url('../fonts/TTNorms-Regular.woff') format('woff'),
       url('../fonts/TTNorms-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  // font-weight: normal;
+  // font-style: normal;
 }

@@ -9,14 +9,22 @@ $primary: #3865D7;
 //Screens
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1170px;
 
-$projektor: $maxWidthContainer + 12;
-$desktop: 991.98;
-$tablet: 767.98;
-$phone: 479.98;
+//breakpoints
+// $projektor: $maxWidthContainer;
+// $desktop: 991.98;
+// $tablet: 767.98;
+// $phone: 479.98;
 
-$maxWidthProjektor: 'max-width: ' + $projektor + 'px';
-$maxWidthDesktop: 'max-width: ' + $desktop + 'px';
-$maxWidthTablet: 'max-width: ' + $tablet + 'px';
-$maxWidthPhone: 'max-width: ' + $phone + 'px';
+// $maxWidthProjektor: 'max-width: ' + $projektor + 'px';
+// $maxWidthDesktop: 'max-width: ' + $desktop + 'px';
+// $maxWidthTablet: 'max-width: ' + $tablet + 'px';
+// $maxWidthPhone: 'max-width: ' + $phone + 'px';
+
+//screens
+$phone: 'min-width: 370px';
+$phoneX: 'min-width: 576px';
+$tablet: 'min-width: 768px';
+$desktop: 'min-width: 992px';
+$projector: 'min-width: 1200px';
