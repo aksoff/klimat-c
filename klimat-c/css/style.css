@@ -20,6 +20,43 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?nk67m1");
+  src: url("../fonts/icomoon.eot?nk67m1#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?nk67m1") format("truetype"), url("../fonts/icomoon.woff?nk67m1") format("woff"), url("../fonts/icomoon.svg?nk67m1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-category:before {
+  content: "\e900";
+  color: #fff;
+}
+
+.icon-list:before {
+  content: "\e901";
+}
+
+.icon-ruler:before {
+  content: "\e902";
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,13 +318,20 @@ header {
 }
 
 .primary-btn {
+  position: relative;
   font-family: "TT Norms";
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #fff;
   background-color: #3865D7;
   border-radius: 5px;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.primary-btn .icon-category {
+  position: absolute;
+  left: 20px;
+  font-size: 2.2rem;
 }
 
 .topmenu__menu {
@@ -346,20 +390,64 @@ header {
 */
 
 .header__menu {
-  margin-top: 35px;
+  position: relative;
+  margin: 35px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__menu .primary-btn {
   text-transform: uppercase;
 }
 
+.header__menu .header__menu-list {
+  margin-left: 35px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: none;
+}
+
+.header__menu .header__menu-item {
+  margin-left: 35px;
+  white-space: nowrap;
+}
+
+.header__menu .header__menu-item a {
+  color: #444;
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.promo {
+  position: relative;
+  height: 496px;
+  background-color: #C4C4C4;
+}
+
+.promo .promo__menu {
+  width: 30%;
+}
+
+.promo .promo__menu-item {
+  margin-bottom: 35px;
 }
 
 @media (min-width: 370px) {
@@ -399,6 +487,22 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .header__menu .header__menu-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  .header__menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .cart {
+    display: block;
   }
 }
 

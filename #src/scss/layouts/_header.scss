@@ -86,13 +86,20 @@ header {
   
 }
 .primary-btn {
+  position: relative;
   font-family: $fontFamily;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: $white;
   background-color: $primary;
   border-radius: 5px;
   text-decoration: none;
   white-space:nowrap;
+
+  & .icon-category {
+    position: absolute;
+    left: 20px;
+    font-size: 2.2rem;
+  }
 }
 .topmenu__menu {
   margin-left: 50px;
@@ -154,9 +161,50 @@ header {
 */
 
 .header__menu {
-  margin-top: 35px;
+  position: relative;
+  margin: 35px 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   & .primary-btn {
     text-transform: uppercase;
+  }
+
+  & .header__menu-list {
+    margin-left: 35px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: none;
+
+    @media ($tablet) {
+      display: inline-flex;
+    }
+
+  }
+
+  & .header__menu-item {
+    margin-left: 35px;
+    white-space:nowrap;
+
+    & a {
+      color: $fontColor;
+    }
+
+  }
+  @media ($tablet) {
+    justify-content: start;
+  }
+
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  display: none;
+
+  @media ($tablet) {
+    display: block;
   }
 }

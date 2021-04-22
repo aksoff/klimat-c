@@ -40,3 +40,18 @@ body {
 .page {
 	flex: 1 1 auto;
 }
+
+.promo {
+	position: relative;
+	height: 496px;
+	background-color: #C4C4C4;
+
+	& .promo__menu {
+		width: 30%;
+	//	background-color: red;
+	}
+
+	& .promo__menu-item {
+		margin-bottom: 35px;
+	}
+}
