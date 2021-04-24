@@ -36,7 +36,7 @@ body {
 @import "utils/index";
 @import "layouts/index";
 
-//<ОСНОВНОЙ БЛОК>====================================================================================================
+//<ОСНОВНОЙ БЛОК>===========================================================================================
 .page {
 	flex: 1 1 auto;
 }
@@ -46,12 +46,30 @@ body {
 	height: 496px;
 	background-color: #C4C4C4;
 
-	& .promo__menu {
+	& .promo__inner {
+		display: flex;
+    flex-direction: row;
+    height: 100%;
+	}
+
+	& .promo__left {
 		width: 30%;
-	//	background-color: red;
+		padding: 35px 0;
 	}
 
 	& .promo__menu-item {
-		margin-bottom: 35px;
+		margin-bottom: 10px;
+	}
+
+	& .promo__right {
+		width: 70%;
+		background-image: url("../img/slider.jpg");
+		background-size: cover;
+		background-position: right;
+		display: none;
+		@media ($desktop) {
+			display: block;
+		}
 	}
 }
+

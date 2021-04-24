@@ -66,6 +66,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow_forward:before {
+  content: "\e903";
+}
+
 .icon-category:before {
   content: "\e900";
   color: #fff;
