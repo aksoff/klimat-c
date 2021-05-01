@@ -52,6 +52,22 @@ body {
     height: 100%;
 	}
 
+	& .backlight-gray {
+		position: absolute;
+		width: 317px;
+		height: 318px;
+		left: 40px;
+		top: 40px;
+		
+		background: #E5E5E5;
+		filter: blur(120px);
+
+		@media ($tablet) {
+			left: 115px;
+			top: 40px;
+		}
+	}
+
 	& .promo__left {
 		width: 30%;
 		padding: 35px 0;
