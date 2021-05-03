@@ -170,11 +170,25 @@ header {
   }
 
   & .header__menu-item {
+    display: block;
     margin-left: 35px;
     white-space:nowrap;
+    
+    
 
     & a {
       color: $fontColor;
+      padding: 20px 0;
+      border-bottom: 2px solid transparent;
+      
+    }
+
+    & a:hover {
+      border-bottom: 2px solid red;
+      box-sizing: border-box;
+      transition: border-width 1.6s linear;
+      
+     // padding: 22px 0;
     }
 
   }

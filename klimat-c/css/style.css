@@ -468,12 +468,24 @@ header {
 }
 
 .header__menu .header__menu-item {
+  display: block;
   margin-left: 35px;
   white-space: nowrap;
 }
 
 .header__menu .header__menu-item a {
   color: #444;
+  padding: 20px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.header__menu .header__menu-item a:hover {
+  border-bottom: 2px solid red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: border-width 1.6s linear;
+  -o-transition: border-width 1.6s linear;
+  transition: border-width 1.6s linear;
 }
 
 .cart {
@@ -486,7 +498,8 @@ header {
   min-height: 350px;
 }
 
-.footer .footer__inner {
+.footer__inner {
+  position: relative;
   color: #fff;
   font-size: 1.6rem;
   line-height: 150%;
@@ -495,11 +508,44 @@ header {
   background-color: #1D1D1B;
 }
 
-.footer .company-description {
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__content h2 {
+  margin-bottom: 20px;
+}
+
+.footer__content .form-back {
+  margin-top: 50px;
+}
+
+.footer__company,
+.footer__contacts {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.footer__socials {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 100px;
+}
+
+.company-description {
   font-size: 1.2rem;
 }
 
-.footer .company-name h2 {
+.company-name h2 {
   font-size: 2.0rem;
   font-weight: 500;
   text-transform: uppercase;
