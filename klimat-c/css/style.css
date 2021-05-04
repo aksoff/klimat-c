@@ -498,7 +498,7 @@ header {
   min-height: 350px;
 }
 
-.footer__inner {
+.footer .footer__inner {
   position: relative;
   color: #fff;
   font-size: 1.6rem;
@@ -508,7 +508,7 @@ header {
   background-color: #1D1D1B;
 }
 
-.footer__content {
+.footer .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,31 +521,31 @@ header {
           justify-content: space-between;
 }
 
-.footer__content h2 {
+.footer .footer__content h2 {
   margin-bottom: 20px;
 }
 
-.footer__content .form-back {
+.footer .footer__content .form-back {
   margin-top: 50px;
 }
 
-.footer__company,
-.footer__contacts {
+.footer .footer__company,
+.footer .footer__contacts {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
 }
 
-.footer__socials {
+.footer .footer__socials {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 100px;
 }
 
-.company-description {
+.footer .company-description {
   font-size: 1.2rem;
 }
 
-.company-name h2 {
+.footer .company-name h2 {
   font-size: 2.0rem;
   font-weight: 500;
   text-transform: uppercase;
