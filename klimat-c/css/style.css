@@ -498,6 +498,32 @@ header {
   min-height: 350px;
 }
 
+.popularProducts .popularProducts__header {
+  padding: 30px 0;
+}
+
+.popularProducts .popularProducts__header h2 {
+  font-size: 3.6rem;
+}
+
+.popularProducts .popularProducts__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popularProducts .popularProducts__cards .productCard {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
 .footer .footer__inner {
   position: relative;
   color: #fff;
@@ -530,15 +556,14 @@ header {
 }
 
 .footer .footer__company,
-.footer .footer__contacts {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+.footer .footer__socials {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
-.footer .footer__socials {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding-left: 100px;
+.footer .footer__contacts {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 
 .footer .company-description {

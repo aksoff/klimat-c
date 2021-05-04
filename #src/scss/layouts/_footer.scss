@@ -24,13 +24,12 @@
     }
   }
   
-  .footer__company, .footer__contacts {
-    flex-basis: 25%;
+  .footer__company, .footer__socials {
+    flex-basis: 40%;
   }
   
-  .footer__socials {
-    flex-basis: 50%;
-    padding-left: 100px;
+  .footer__contacts {
+    flex-basis: 20%;
   }
   
   .company-description {
