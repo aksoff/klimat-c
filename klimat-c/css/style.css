@@ -171,6 +171,33 @@
   background-color: #f8e112;
 }
 
+.btn-submit {
+  width: 100%;
+  color: #444;
+  background-color: #EAFB24;
+  font-family: "TT Norms";
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 1.5rem 0.75rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.2));
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.btn-submit:hover {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #f8e112;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -496,21 +523,22 @@ header {
 
 #page {
   min-height: 350px;
+  margin-bottom: 150px;
 }
 
-.popularProducts {
-  margin-bottom: 250px;
+#page .pageBox {
+  margin-bottom: 60px;
 }
 
-.popularProducts .popularProducts__header {
+#page .boxHeader {
   padding: 30px 0;
 }
 
-.popularProducts .popularProducts__header h2 {
+#page .boxHeader h2 {
   font-size: 3.6rem;
 }
 
-.popularProducts .popularProducts__cards {
+#popular .popular__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,7 +551,7 @@ header {
           justify-content: space-between;
 }
 
-.popularProducts .popularProducts__cards .productCard {
+#popular .popular__cards .productCard {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   display: -webkit-box;
@@ -541,17 +569,104 @@ header {
           align-items: center;
 }
 
-.popularProducts .popularProducts__cards .productCard__price {
+#popular .popular__cards .productCard__price {
   font-size: 1.8rem;
   font-weight: 500;
   padding: 20px 0;
 }
 
-.popularProducts .popularProducts__cards .productCard__description {
+#popular .popular__cards .productCard__description {
   font-size: 1.4rem;
   line-height: 2.6rem;
   text-align: center;
   padding: 0 35px 15px;
+}
+
+#service .serviceContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#service .serviceItem {
+  position: relative;
+  background-color: #E5E5E5;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  min-height: 100px;
+  padding: 20px 30px 20px 70px;
+}
+
+#service .serviceItem__num {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #3865D7;
+  font-size: 2.4rem;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#service .serviceItem__text {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+#request .request__inner {
+  background-color: #3865D7;
+  min-height: 250px;
+  padding: 45px 70px;
+}
+
+#request .form-title {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+#request .form-title p.text {
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  font-weight: 300;
+}
+
+#request .request__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+#request .form-field {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+#request .form-field input {
+  height: 60px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  font-size: 2.2rem;
 }
 
 .footer .footer__inner {
@@ -559,7 +674,7 @@ header {
   color: #fff;
   font-size: 1.6rem;
   line-height: 150%;
-  height: 400px;
+  height: 350px;
   padding: 55px 0;
   background-color: #1D1D1B;
 }
