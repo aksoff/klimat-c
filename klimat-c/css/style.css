@@ -686,6 +686,77 @@ header {
   font-size: 2.2rem;
 }
 
+#features {
+  min-height: 150px;
+  background-color: #E5E5E5;
+  margin-bottom: 5px;
+}
+
+#features .features__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#features .features__item {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#about {
+  position: relative;
+  min-height: 380px;
+  background-color: #3865D7;
+}
+
+#about #aboutLight {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 100px;
+  top: 30px;
+  background: #c6d6fd;
+  -webkit-filter: blur(120px);
+          filter: blur(120px);
+}
+
+#about .about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  color: #fff;
+}
+
+#about .about__text {
+  padding: 30px 70px;
+  z-index: 1;
+}
+
+#about .about__text h2 {
+  padding: 15px 0;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 4.6rem;
+}
+
+#about .about__text p.text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3.0rem;
+}
+
 .footer .footer__inner {
   position: relative;
   color: #fff;

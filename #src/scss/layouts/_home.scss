@@ -143,3 +143,68 @@
 }
 
 
+//== Features Box =================================================================================
+
+#features {
+  min-height: 150px;
+  background-color: $grayBg;
+  margin-bottom: 5px;
+  .features__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+  }
+
+  .features__item {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
+//== About Box ===================================================================================
+
+#about {
+  position: relative;
+  min-height: 380px;
+  background-color: $primary;
+
+  #aboutLight {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 100px;
+    top: 30px;
+
+    background: #c6d6fd;
+    filter: blur(120px);
+  }
+  .about__inner {
+    display: flex;
+    flex-flow: row wrap;
+    color: $white;
+  }
+
+  .about__text {
+    padding: 30px 70px;
+    //flex-basis: 60%;
+    z-index: 1;
+
+    h2 {
+      padding: 15px 0;
+      font-size: 3.6rem;
+      font-weight: 500;
+      line-height: 4.6rem;
+    }
+
+    p.text {
+      font-size: 1.8rem;
+      font-weight: 300;
+      line-height: 3.0rem;
+    }
+  }
+}
+
+//== 
