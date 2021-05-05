@@ -87,12 +87,28 @@
 //== Request Box ==============================================================================
 
 #request {
+  position: relative;
+
   .request__inner {
+    position: relative;
     background-color: $primary;
     min-height: 250px;
     padding: 45px 70px;
+
+    #formLight {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      left: 100px;
+      top: 30px;
+  
+      background: #c6d6fd;
+      filter: blur(120px);
+    }
+  
   }
 
+  
   .form-title {
     color: $white;
     font-size: 3.6rem;
@@ -114,6 +130,7 @@
 
   .form-field {
     flex-basis: 30%;
+    z-index: 100;
 
     input {
       height: 60px;

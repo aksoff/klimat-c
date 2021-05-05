@@ -178,13 +178,13 @@
   font-family: "TT Norms";
   font-size: 1.8rem;
   font-weight: 500;
-  text-transform: uppercase;
+  line-height: 3.0rem;
   border-radius: 5px;
   padding: 1.5rem 0.75rem;
   vertical-align: middle;
   white-space: nowrap;
-  -webkit-filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -624,10 +624,26 @@ header {
   line-height: 2.6rem;
 }
 
+#request {
+  position: relative;
+}
+
 #request .request__inner {
+  position: relative;
   background-color: #3865D7;
   min-height: 250px;
   padding: 45px 70px;
+}
+
+#request .request__inner #formLight {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 100px;
+  top: 30px;
+  background: #c6d6fd;
+  -webkit-filter: blur(120px);
+          filter: blur(120px);
 }
 
 #request .form-title {
@@ -659,6 +675,7 @@ header {
 #request .form-field {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+  z-index: 100;
 }
 
 #request .form-field input {
