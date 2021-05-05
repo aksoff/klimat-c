@@ -157,11 +157,16 @@
   }
 
   .features__item {
-    font-size: 1.8rem;
-    font-weight: 400;
-    padding: 20px 0;
+   
     text-align: center;
   }
+
+  .item__title {
+    padding: 20px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
 }
 
 //== About Box ===================================================================================
