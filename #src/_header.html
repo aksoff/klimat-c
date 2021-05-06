@@ -2,7 +2,9 @@
 	<div class="header__content _container">
 		<div class="top-header">
 			<div class="logo">
+				<a href="/" class="home-url">
 					<img class="logo__img" src="./img/logo.png"></img>
+				</a>
 					<div class="logo__title">
 							Климат-центр
 							<p class="logo__title-text">Торгово-монтажная компания</p>
@@ -26,11 +28,41 @@
 			</div>
 		</div>
 		<div class="header__menu">
-			<button class="btn btn-primary btn-icon-left">
+			<button id="btn-category" class="btn btn-primary btn-icon-left">
 				<span class="icon-category"></span>
 				<!-- <span class="icon-arrow_forward"></span> -->
 				Каталог
 			</button>
+			<div id="dropdown-menu" class="categories">
+				<div class="dropdown__inner">
+					<ul class="menu-list">
+						<li class="menu-item">
+							<a href="#">
+								Жалюзи
+								<span class="icon-arrow_forward"></span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								Шторы
+								<span class="icon-arrow_forward"></span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								Кондиционеры
+								<span class="icon-arrow_forward"></span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								Сплит-системы
+								<span class="icon-arrow_forward"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<nav class="menu">
 				<ul class="header__menu-list">
 					<li class="header__menu-item"><a class="header__menu-link" href="#">Услуги и оплата</a></li>
