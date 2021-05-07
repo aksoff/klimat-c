@@ -69,8 +69,17 @@ body {
 	}
 
 	& .promo__left {
-		width: 30%;
-		padding: 35px 0;
+
+		width: 100%;
+    padding: 35px 0;
+    text-align: center;
+
+		@media ($tablet) {
+			width: 30%;
+			padding: 35px 0;
+			text-align: left;
+		}
+		
 	}
 
 	& .promo__menu-item {
